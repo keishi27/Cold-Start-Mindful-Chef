@@ -1,7 +1,7 @@
-# S2DS - Mindful Chef - August 2020
+# S2DS - Mindful Chef
 
 ## Description
-Team repo for Mindful Chef data science project, as part of Science to Data Science (S2DS) August 2020.
+Team repo for Mindful Chef data science project, as part of Science to Data Science (S2DS).
 
 ## Table of Contents
 
