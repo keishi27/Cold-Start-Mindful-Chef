@@ -1,0 +1,23 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+<title>Food Group Choices</title>
+</head>
+<body>-->
+{% extends "_base.html" %}
+
+{% block content1 %}
+
+<h1>Which food groups would you like included?</h1>
+<form method="POST" ACTION="/fg_choices">
+    <p>Chicken <input type="checkbox" name="choices" value="Chicken"></p>
+    <p>Fish <input type="checkbox" name="choices" value="Fish"></p>
+    <p>Beef <input type="checkbox" name="choices" value="Beef"></p>
+    <p>Pork <input type="checkbox" name="choices" value="Pork"></p>
+    <p>Lamb <input type="checkbox" name="choices" value="Lamb"></p>
+    <p>Vegan <input type="checkbox" name="choices" value="Vegan"></p>
+    <input type="submit" value="Submit" style = "font-size:30px">
+
+    {% endblock %}
+    <!--</body>
+</html>-->

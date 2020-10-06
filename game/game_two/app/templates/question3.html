@@ -1,0 +1,23 @@
+{% extends "_base.html" %}
+
+{% block content3 %}
+
+<!--<div class="row">-->
+
+  <!--<div class="col-md-7">-->
+    <h2>Select a Recipe</h2>
+    <br>
+    
+  
+    <form method="POST" ACTION="/question3">
+      {% for elem in imageDict %}
+      <p><img src={{ imageDict[elem][0] }} style="height: 250px;"><input type="checkbox" name="option3" value={{ imageDict[elem][1] }}></p>
+      {% endfor %}
+      <input type="submit" value="Submit">
+
+  <!--</div>-->
+
+
+<br>
+
+{% endblock %}

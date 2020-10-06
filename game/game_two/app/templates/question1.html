@@ -1,0 +1,45 @@
+{% extends "_base.html" %}
+
+{% block content2 %}
+
+<!--<div class="row">-->
+<p> {{ error }} </p>
+<!--<div class="col-md-7">-->
+<h2>(Q 1/2): Tick <b>2-5 recipes</b> for your ideal recipe delivery box</h2>
+<p>And press Submit</p>
+<br>
+
+
+<form method="POST" ACTION="/question1">
+  <div class="row">
+    {% for elem in imageDictOne %}
+    <div class="column">
+      <figure>
+        <img src={{ imageDictOne[elem][0] }} style="height: 150px;"><input type="checkbox" name="option1"
+          value={{ imageDictOne[elem][1] }}>
+        <figcaption>{{ imageDictOne[elem][2]}}</figcaption>
+        <br />
+      </figure>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="row">
+    {% for elem in imageDictTwo %}
+    <div class="column">
+      <figure>
+        <img src={{ imageDictTwo[elem][0] }} style="height: 150px;"><input type="checkbox" name="option1"
+          value={{ imageDictTwo[elem][1] }}>
+        <figcaption>{{ imageDictTwo[elem][2]}}</figcaption>
+        <br />
+      </figure>
+    </div>
+    {% endfor %}
+  </div>
+  <input type="submit" value="Submit" style = "font-size:30px">
+
+  <!--</div>-->
+
+
+  <br>
+
+  {% endblock %}

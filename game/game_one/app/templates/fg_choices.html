@@ -1,0 +1,24 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+<title>Food Group Choices</title>
+</head>
+<body>-->
+{% extends "_base.html" %}
+
+{% block content %}
+
+<h1>Please select your food preferences:</h1>
+    <form method= "POST" ACTION="/">
+        <p>Vegan<input type="checkbox" name="choices" value="Vegan"></p>
+        <p>Fish<input type="checkbox" name="choices" value="Fish"></p>
+        <p>Chicken<input type="checkbox" name="choices" value="Chicken"></p>
+        <p>Pork<input type="checkbox" name="choices" value="Pork"></p>
+        <p>Lamb<input type="checkbox" name="choices" value="Lamb"></p>
+        <p>Beef<input type="checkbox" name="choices" value="Beef"></p>
+        <input type="submit" value="Submit"> 
+        
+{% endblock %}
+<!--</body>
+</html>-->
+

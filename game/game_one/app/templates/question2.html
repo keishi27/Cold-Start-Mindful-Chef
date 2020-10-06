@@ -1,0 +1,32 @@
+{% extends "_base.html" %}
+
+{% block content2 %}
+
+<!--<div class="row">-->
+  <p> {{ error }} </p>
+  <!--<div class="col-md-7">-->
+  <h2>(Q 2/2): Choose <b>2-5 recipes</b> for your ideal </h2>
+  <h2>delivery box and press Submit</h2> 
+    <br>
+    
+  
+    <form method="POST" ACTION="/question2">
+    <div class="row">
+      {% for elem in imageDict %}
+      <div class = "column">-
+      <figure>
+      <img src={{ imageDict[elem][0] }} style="height: 150px;"><input type="checkbox" name="option2" value={{ imageDict[elem][1] }}>
+      <figcaption>{{ imageDict[elem][2]}}</figcaption>
+      <br>
+      </figure>
+      </div>
+      {% endfor %}
+     </div>
+     <input type="submit" value="Submit" style = "font-size:30px">
+
+  <!--</div>-->
+
+
+<br>
+
+{% endblock %}
