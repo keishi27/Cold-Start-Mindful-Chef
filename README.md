@@ -82,14 +82,3 @@ Team repo for Mindful Chef data science project, as part of Science to Data Scie
 - windows: `.\venv\scripts\activate`
 3. Install requirements:
 - run: `./terminal_installation.sh` file in the terminal
-
-## Credits
-Arya Dhar - arya.dhar@gmail.com
-
-Giovanni De Cillis - giovanni.decillis@gmail.com
-
-Keishi Kohara - keishi@live.co.uk
-
-Lisa Richards - lisarichards81@gmail.com
-
-Valentina Notararigo - valentina.notararigo@gmail.com
