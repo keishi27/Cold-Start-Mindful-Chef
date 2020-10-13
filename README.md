@@ -1,5 +1,3 @@
-# S2DS - Mindful Chef
-
 ## Description
 Team repo for Mindful Chef data science project, as part of Science to Data Science (S2DS).
 
