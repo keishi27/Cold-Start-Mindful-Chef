@@ -1,5 +1,5 @@
 ## Description
-- Team project repo, developing solutions for the cold-start problem, for Mindful Chef (MC, Science to Data Science).
+- Team project repo, developing solutions for the cold-start problem, working with Mindful Chef/Science to Data Science (MC/S2DS).
 - MC required a way to profile new customers and their tastes, to best recommend recipes.
 - Team developed 3 onboarding tools, driven by ML techniques.
 - Game 1 acted as the baseline model (MC current system).
