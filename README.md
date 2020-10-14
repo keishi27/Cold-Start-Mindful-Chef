@@ -1,5 +1,12 @@
 ## Description
-Team repo for Mindful Chef data science project, as part of Science to Data Science (S2DS).
+- Team project repo, developing solutions for the cold-start problem, for Mindful Chef (MC, Science to Data Science).
+- MC required a way to profile new customers and their tastes, to best recommend recipes.
+- Team developed 3 onboarding tools, driven by ML techniques.
+- Game 1 acted as the baseline model (MC current system).
+- Game 2 used NLP and dimensionality reduction to select recipes for onboarding tool.
+- Game 3 used topic modelling and clustering to select recipes.
+- Onboarding tools were sent to 21,000 customers for A/B testing, with a 11%+ response rate.
+- Using statistical analysis, Games 2/3 were found to be better than Game 1 at predicting customer tastes.
 
 ## Table of Contents
 
@@ -24,52 +31,6 @@ Team repo for Mindful Chef data science project, as part of Science to Data Scie
 **reports**: Updates and deliverables presented to S2DS and Mindful Chef.
 
 **src**: Source code for project.
-
-## Guide to Running Games
-
-**Generate clean recipe table**
-- Navigate to `game/src`
-- Enter `python`, then enter `from feature_generator import clean_recipe_table`
-- Enter `clean_recipe_table('../data/recipe_table.csv', '../data/recipe_table_updated_UAT.csv')`
-- This generates the updated recipe table `../data/recipe_table_new.csv`
-- Delete `../data/recipe_table.csv` (the old recipe table)
-- Rename `../data/recipe_table_new.csv` to `../data/recipe_table.csv`
-
-**Game 1**
-- Navigate to `game/game_one/app`
-- Enter `python app.py` to run the game
-
-**Game 2**
-- Navigate to `game/src`
-- Enter `python`, then enter `from game2_builder import get_recipe_3_pc, get_scaled_pc_by_fg`
-- Enter `get_recipe_3_pc('../data/recipe_table.csv')`
-- This uses the updated recipe table to generate a new table with 3 principal components for each recipe
-- Enter `get_scaled_pc_by_fg('../data/recipe_3_pc.csv')`
-- This generates CSV files for each food group, where the each principal component axis is scaled between 0 and 1
-- Example CSV file: `../data/Beef_FG_Scaled_PC.csv`
-- Navigate to `game/game_two/app`
-- Enter `python app.py` to run the game
-
-**Game 3**
-- Navigate to `game/src`
-- Enter `python clustering_recipes.py` to generate the `.csv` file required by Game 3
-- Navigate to `game/game_three/app`
-- Enter `python app.py`
-<br><br>*Caution:*
-- When a new recipe table is used, it is necessary to navigate to game/notebooks and run the Jupyter Notebook : `5.0_clustering_recipes.ipynb`
-- The user needs to try different parameters inside the topic modelling section to get the best number of topics without significant overlap and also simultaneously maximizing
-- Any change made in the notebook has to be implemented in the python script: `src/clustering_recipies.py`, and then rerun to generate the required `.csv` file.
-
-**Analysis of results**
-- Navigate to `game/src`
-- Enter `python`, then enter `from ab_test_analyser import analyse_abtest, analyse_abtest_game3`
-<br><br>*For Game 1 and 2*
-- Enter `analyse_abtest('existing_order.csv', 'observed_order.csv', game_number)` (with relevant csv names)
-<br><br>*For Game 3*
-- Enter `analyse_abtest_game3('existing_order.csv', 'observed_order.csv', game_number)` (with relevant csv names)
-<br><br>*Then for all games*
-- This generates the difference in customers' historical and measured values for delta12/magnitude, for each game
-- Visualisation and further statistical analysis can be conducted by inputting the generated `.csv` files into `game/notebooks/4.3-statistical-analysis-results.ipynb`
 
 ## Installation 
 1. Create a local virtual environment: 
