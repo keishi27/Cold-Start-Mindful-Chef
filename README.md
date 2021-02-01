@@ -1,12 +1,13 @@
 ## Description
-- Team project repo, developing solutions for the cold-start problem, working with Mindful Chef/Science to Data Science (MC/S2DS).
+- Repo for team project, developing cold-start problem solution for food-box start-up
+- Working with Mindful Chef and Science to Data Science (MC/S2DS).
 - MC required a way to profile new customers and their tastes, to best recommend recipes.
-- Team developed 3 onboarding tools, driven by ML techniques.
+- Our team developed 3 onboarding tools, driven by ML techniques.
 - Game 1 acted as the baseline model (MC current system).
 - Game 2 used NLP and dimensionality reduction to select recipes for onboarding tool.
 - Game 3 used topic modelling and clustering to select recipes.
 - Onboarding tools were sent to 21,000 customers for A/B testing, with a 11%+ response rate.
-- Using statistical analysis, Games 2/3 were found to be better than Game 1 at predicting customer tastes.
+- Using statistical analysis, both Games 2 and 3 were found to be better than Game 1 at predicting customer tastes.
 
 ## Table of Contents
 
@@ -34,10 +35,8 @@
 
 ## Installation 
 1. Create a local virtual environment: 
-- ubuntu/mac: `python3 -m venv venv`
-- windows: `py -m venv venv`
+- `python3 -m venv mc_env`
 2. Activate environment: 
-- ubuntu/mac: `source venv/bin/activate`
-- windows: `.\venv\scripts\activate`
+- `source mc_env/bin/activate`
 3. Install requirements:
-- run: `./terminal_installation.sh` file in the terminal
+- `bash terminal_installation.sh`

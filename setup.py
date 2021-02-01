@@ -19,7 +19,7 @@ requirements = [
     "gensim==3.8.3",
     "flask",
     "gunicorn",
-    "scikit-image",
+    "scikit-learn",
     "waitress",
     "wordcloud",
     "marshmallow",
