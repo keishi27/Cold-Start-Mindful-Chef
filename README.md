@@ -34,9 +34,5 @@
 **src**: Source code for project.
 
 ## Installation 
-1. Create a local virtual environment: 
-- `python3 -m venv mc_env`
-2. Activate environment: 
-- `source mc_env/bin/activate`
-3. Install requirements:
-- `bash terminal_installation.sh`
+1. Create local environment: 
+- `conda env create -f environment.yml`

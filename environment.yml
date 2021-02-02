@@ -1,0 +1,31 @@
+name: mc_env
+channels:
+  - default
+  - conda-forge
+dependencies:
+  - python=3.7
+  - pandas
+  - loguru
+  - nltk
+  - matplotlib
+  - requests
+  - seaborn
+  - spacy
+  - pyLDAvis
+  - gensim
+  - flask
+  - gunicorn
+  - scikit-learn
+  - waitress
+  - wordcloud
+  - marshmallow
+  - plotly
+  - nbformat
+  - dictdiffer
+  - statsmodels
+  - pip
+  - pip:
+    - marshmallow_jsonapi
+    - gender_guesser
+    - psycopg2-binary
+    - ipykernel
